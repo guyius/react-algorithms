@@ -1,0 +1,46 @@
+.App-nav {
+  flex-basis: 20%;
+  background-color: #ffffff;
+  border-right: 1px solid #e6ecf0;
+}
+
+.Nav-wrapper {
+  text-align: left;
+  font-size: 1.25em;
+  cursor: pointer;
+  padding: 20px 0 0 20px;
+}
+
+a {
+  color: #657786;
+}
+
+a.active {
+  color: #1c94e0;
+}
+
+.Nav-wrapper.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  height: 20px;
+  width: 20px;
+  vertical-align: bottom;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+ul {
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.Nav-wrapper.active ul {
+  max-height: 100px;
+  transition: max-height 0.3s ease-out;
+}

@@ -1,0 +1,17 @@
+li:first-child {
+  margin-top: 10px;
+}
+
+a {
+  color: #657786;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+a:hover {
+  color: #1c94e0;
+}
+
+a.selected {
+  color: #1da1f2;
+}
