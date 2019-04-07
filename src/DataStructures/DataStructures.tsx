@@ -6,7 +6,6 @@ import "./DataStructures.css";
 
 const DataStructures: SFC = () => (
   <section className="Data-structures">
-    Data-Structure
     <Route path="/data-structures/:name" component={DataStructure} />
   </section>
 );

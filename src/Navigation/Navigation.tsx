@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import { NavigationTreeCategory } from "./Types";
 import { APPLICATION_NAVIGATION_TREE } from "./Constants";
-import CategoryItem from "./components/CategoryItem";
+import NavigationItem from "./components/NavigationItem";
 import { ReactComponent as ArrowIcon } from "../arrow.svg";
 import "./Navigation.css";
 
@@ -23,7 +23,7 @@ const Navigation: SFC = () => (
         <ArrowIcon />
         <ul>
           {category.items.map(item => (
-            <CategoryItem
+            <NavigationItem
               key={item.url}
               item={item}
               rootUrl={category.rootUrl}

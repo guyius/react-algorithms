@@ -2,14 +2,14 @@ import React, { SFC } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { NavigationTreeItem } from '../Types';
-import './CategoryItem.css';
+import './NavigationItem.css';
 
-interface CategoryItemProps {
+interface NavigationItemProps {
     item: NavigationTreeItem;
     rootUrl: string;
 }
 
-const CategoryItem: SFC<CategoryItemProps> = ({item, rootUrl}) => (
+const NavigationItem: SFC<NavigationItemProps> = ({item, rootUrl}) => (
     <li>
         <NavLink to={`${rootUrl}${item.url}`} activeClassName="selected">
             {item.displayName}
@@ -17,4 +17,4 @@ const CategoryItem: SFC<CategoryItemProps> = ({item, rootUrl}) => (
     </li>
 );
 
-export default CategoryItem;
+export default NavigationItem;
